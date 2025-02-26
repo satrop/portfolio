@@ -3,7 +3,10 @@ import "./Skills.scss";
 
 const Skills = () => {
   return (
-    <article className="skills">
+    <article
+      id="skills"
+      className="skills"
+    >
       <h2>My Skills</h2>
       {/* Add your skills details here */}
     </article>

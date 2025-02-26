@@ -1,5 +1,55 @@
 .navigation {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 5%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      a {
+        $green-200: #145b3b;
+
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba($green-200, 0.5);
+        border-radius: 50%;
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: rgba($green-200, 0.5);
+          border-radius: 50%;
+          z-index: -1;
+        }
+
+        &:hover,
+        &:focus-visible {
+          &::after {
+            animation: sonar-ping 1s infinite;
+            transform-origin: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes sonar-ping {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }

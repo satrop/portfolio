@@ -6,7 +6,10 @@ import { AiFillFilePdf } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <article className="hero">
+    <article
+      id="hero"
+      className="hero"
+    >
       <div className="hero-inner">
         <div className="hero-heading">
           <div className="green-200 fw-600">Nice to meet you!</div>
@@ -18,9 +21,11 @@ const Hero = () => {
             <a
               href="/path/to/your-document.pdf"
               download
-              aria-label="Download PDF"
+              aria-label="Download a PDF of my resume."
+              className="tooltip tooltip--bottom"
             >
-              <AiFillFilePdf aria-hidden="true" /> <span>Download PDF</span>
+              <AiFillFilePdf aria-hidden="true" />
+              <span aria-hidden="true">Download PDF</span>
             </a>
           </li>
           <li>
@@ -28,9 +33,11 @@ const Hero = () => {
               href="https://github.com/your-github-username"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="GitHub check out my projects."
+              className="tooltip tooltip--bottom"
             >
-              <FaGithub aria-hidden="true" /> <span>GitHub</span>
+              <FaGithub aria-hidden="true" />
+              <span aria-hidden="true">GitHub</span>
             </a>
           </li>
           <li>
@@ -38,9 +45,11 @@ const Hero = () => {
               href="https://www.frontendmentor.io/profile/your-frontend-mentor-username"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Frontend Mentor"
+              aria-label="See what I've been up to on Frontend Mentor."
+              className="tooltip tooltip--bottom"
             >
-              <SiFrontendmentor aria-hidden="true" /> <span>Frontend Mentor</span>
+              <SiFrontendmentor aria-hidden="true" />
+              <span aria-hidden="true">Frontend Mentor</span>
             </a>
           </li>
           <li>
@@ -48,9 +57,11 @@ const Hero = () => {
               href="https://www.linkedin.com/in/your-linkedin-username"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Visit my LinkedIn profile."
+              className="tooltip tooltip--bottom"
             >
-              <FaLinkedin aria-hidden="true" /> <span>LinkedIn</span>
+              <FaLinkedin aria-hidden="true" />
+              <span aria-hidden="true">LinkedIn</span>
             </a>
           </li>
           <li>
@@ -58,9 +69,11 @@ const Hero = () => {
               href="https://codepen.io/your-codepen-username"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="CodePen"
+              aria-label="Go to my CodePen account."
+              className="tooltip tooltip--bottom"
             >
-              <FaCodepen aria-hidden="true" /> <span>CodePen</span>
+              <FaCodepen aria-hidden="true" />
+              <span aria-hidden="true">CodePen</span>
             </a>
           </li>
         </ul>

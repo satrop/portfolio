@@ -33,6 +33,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -131,4 +132,82 @@ p {
 // Colors
 .green-200 {
   color: var(--green-200);
+}
+
+// Tooltip
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+
+  svg {
+    font-size: 1rem;
+    transition: fill var(--anim);
+  }
+
+  span {
+    background-color: var(--green-200);
+    border-radius: var(--b-rad);
+    color: var(--green-100);
+    font-size: 0.8rem;
+    padding: 0.25rem 1rem;
+    position: absolute;
+    opacity: 0;
+    transition: opacity var(--anim), transform var(--anim);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    span {
+      opacity: 1;
+    }
+
+    svg {
+      fill: var(--green-200);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  // Tooltip Positioning
+  &--bottom {
+    span {
+      bottom: -30px;
+      transform: translateY(10px);
+    }
+
+    &:hover,
+    &:focus-visible {
+      span {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--right {
+    position: relative;
+
+    span {
+      top: 50%;
+      left: 0;
+      transform: translate(30px, -50%);
+    }
+
+    &:hover,
+    &:focus-visible {
+      span {
+        transform: translate(20px, -50%);
+      }
+    }
+  }
 }

@@ -1,12 +1,12 @@
-import React from 'react';
-import './Skills.scss';
+import React from "react";
+import "./Skills.scss";
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <article className="skills">
       <h2>My Skills</h2>
       {/* Add your skills details here */}
-    </div>
+    </article>
   );
 };
 

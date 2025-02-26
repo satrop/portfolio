@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  //Colors
+  --green-100: #041a10;
+  --green-200: #4ce19e;
+
+  // Fonts
+  --ff-100: "Manrope", sans-serif;
+
+  --fs-300: clamp(0.8rem, 3vw, 1rem);
+  --fs-400: clamp(1rem, 4vw, 2.5rem);
+  --fs-500: clamp(1.5rem, 5vw, 3rem);
+
+  // Misc
+  --anim: 0.3s ease-in-out;
+  --pad-block: clamp(4rem, 1.5vw, 6rem);
+  --pad-element: clamp(1rem, 1.5vw, 1.5rem);
+  --b-rad: 0.25rem;
+
+  // Functions
+  --element-width: min(80%, 1000px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  all: unset;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// Page Setup
+body {
+  background: var(--green-100);
+  font-family: var(--ff-100);
+  font-size: var(--fs-300);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+article {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+
+  > div {
+    padding-block: var(--pad-block);
+    width: var(--element-width);
+    margin-inline: auto;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+// Headings
+h1,
+h2,
+h3 {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--fs-500);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--fs-400);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: var(--fs-300);
+  font-weight: 800;
+}
+
+p {
+  --p-width: min(100%, 600px);
+
+  width: var(--p-width);
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+// Colors
+.green-200 {
+  color: var(--green-200);
 }

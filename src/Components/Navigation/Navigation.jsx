@@ -2,16 +2,20 @@ import React from "react";
 import { motion, useScroll } from "framer-motion";
 import "./Navigation.scss";
 
+const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 const staggerVariants = {
-  hidden: { opacity: 0, x: -50 },
+  hidden: { opacity: 0, x: shouldReduceMotion ? 0 : -50 },
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: {
-      delay: 2.5 + i * 0.1,
-      duration: 1.5,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: 2.5 + i * 0.1,
+          duration: 1.5,
+          ease: "easeInOut",
+        },
   }),
 };
 

@@ -1,4 +1,8 @@
 .hero {
+  .kicker {
+    color: var(--primary-color);
+  }
+
   &-links {
     display: flex;
     flex-direction: row;

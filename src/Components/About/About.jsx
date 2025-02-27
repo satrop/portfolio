@@ -3,15 +3,19 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import myImage from "../../assets/images/Me.jpg";
 
+const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 const letterAnimation = {
-  hidden: { opacity: 0, x: 10 },
+  hidden: { opacity: 0, x: shouldReduceMotion ? 0 : 10 },
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: {
-      delay: 0.6 + i * 0.03,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: 0.6 + i * 0.03,
+          ease: "easeInOut",
+        },
   }),
 };
 
@@ -41,10 +45,10 @@ const About = () => {
 
         <motion.div
           className="content"
-          initial={{ opacity: 0, scale: 0.99 }}
+          initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 0.99 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeInOut", delay: 0.6 }}
+          transition={shouldReduceMotion ? {} : { duration: 0.5, ease: "easeInOut", delay: 0.6 }}
         >
           <p>My mum is an artist, and my dad is an engineer. My brain loves working in both of those spaces at the same time. Yep, I love blending left-brain logic with right-brain creativity—front-end development with an eye for artistry.</p>
 
@@ -62,14 +66,14 @@ const About = () => {
           className="media"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut" }}
+          transition={shouldReduceMotion ? {} : { duration: 2, ease: "easeInOut" }}
         >
           <motion.img
             src={myImage}
             alt="Steve's face"
-            initial={{ opacity: 0, x: 10 }}
+            initial={{ opacity: 0, x: shouldReduceMotion ? 0 : 10 }}
             whileInView={{ opacity: 0.2, x: 0 }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+            transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 0.5 }}
           />
         </motion.div>
       </div>

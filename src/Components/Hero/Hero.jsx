@@ -5,27 +5,33 @@ import { SiFrontendmentor } from "react-icons/si";
 import { AiFillFilePdf } from "react-icons/ai";
 import { motion } from "framer-motion";
 
+const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 const letterAnimation = {
-  hidden: { opacity: 0, x: 10 },
+  hidden: { opacity: 0, x: shouldReduceMotion ? 0 : 10 },
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: {
-      delay: 0.6 + i * 0.03,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: 0.6 + i * 0.03,
+          ease: "easeInOut",
+        },
   }),
 };
 
 const listItemAnimation = {
-  hidden: { opacity: 0, x: -5 },
+  hidden: { opacity: 0, x: shouldReduceMotion ? 0 : -5 },
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: {
-      delay: 2.25 + i * 0.03,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: 2.25 + i * 0.03,
+          ease: "easeInOut",
+        },
   }),
 };
 
@@ -72,11 +78,11 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-heading">
           <motion.div
-            className="green-200 fw-600"
-            initial={{ opacity: 0, x: -50 }}
+            className="kicker"
+            initial={{ opacity: 0, x: shouldReduceMotion ? 0 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeOut" }}
           >
             Nice to meet you!
           </motion.div>
@@ -100,7 +106,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeInOut", delay: 1.5 }}
+          transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 1.5 }}
         >
           Front-End Web Developer with 10+ years of experience building responsive, accessible, and scalable web applications. Skilled in Next.js, React, SCSS, JavaScript, Tailwind CSS, and ADA compliance (WCAG). Passionate about crafting high-performance, user-friendly web experiences. Strong collaborator with cross-functional teams to enhance development workflows, optimize performance, and uphold best coding practices.
         </motion.p>

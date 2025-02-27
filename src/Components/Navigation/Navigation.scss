@@ -12,12 +12,10 @@
       list-style: none;
 
       a {
-        $green-200: #145b3b;
-
         display: block;
         width: 10px;
         height: 10px;
-        background-color: rgba($green-200, 0.5);
+        background-color: var(--green);
         border-radius: 50%;
         position: relative;
         display: grid;
@@ -28,7 +26,7 @@
           position: absolute;
           width: 10px;
           height: 10px;
-          background-color: rgba($green-200, 0.5);
+          background-color: var(--green);
           border-radius: 50%;
           z-index: -1;
         }

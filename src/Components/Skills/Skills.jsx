@@ -2,28 +2,34 @@ import React from "react";
 import "./Skills.scss";
 import { motion } from "framer-motion";
 
+const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 const letterAnimation = {
-  hidden: { opacity: 0, x: 10 },
+  hidden: { opacity: 0, x: shouldReduceMotion ? 0 : 10 },
   visible: (i) => ({
     opacity: 1,
     x: 0,
-    transition: {
-      delay: i * 0.03,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: i * 0.03,
+          ease: "easeInOut",
+        },
   }),
 };
 
 const listAnimation = {
-  hidden: { opacity: 0, y: 10 },
+  hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 10 },
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: {
-      delay: 0.6 + i * 0.2,
-      duration: 0.5,
-      ease: "easeInOut",
-    },
+    transition: shouldReduceMotion
+      ? {}
+      : {
+          delay: 0.6 + i * 0.2,
+          duration: 0.5,
+          ease: "easeInOut",
+        },
   }),
 };
 

@@ -1,10 +1,4 @@
 .hero {
-  &-inner {
-    display: flex;
-    flex-direction: column;
-    gap: var(--pad-element);
-  }
-
   &-links {
     display: flex;
     flex-direction: row;

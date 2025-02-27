@@ -3,9 +3,8 @@ import Hero from "./Components/Hero/Hero";
 import Navigation from "./Components/Navigation/Navigation";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
-import About from "./Components/About/About"; // Import About component
-import CardFeatured from "./Components/CardFeatured/CardFeatured";
-import CardStandard from "./Components/CardStandard/CardStandard";
+import About from "./Components/About/About";
+import Demos from "./Components/Demos/Demos";
 
 function App() {
   return (
@@ -13,10 +12,9 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <Projects />
       <Skills />
-      <CardFeatured />
-      <CardStandard />
+      <Projects />
+      <Demos />
     </>
   );
 }

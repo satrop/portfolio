@@ -12,8 +12,9 @@ const Demos = () => {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 1, ease: "easeInOut", delay: 0.6 }}
     >
-      <h2>My Demos</h2>
-      {/* Add your project details here */}
+      <div className="inner">
+        <h2>My Demos</h2>
+      </div>
     </motion.article>
   );
 };

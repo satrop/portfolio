@@ -91,6 +91,13 @@ h6 {
   isolation: isolate;
 }
 
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
 // Page Setup
 body {
   background: var(--green-100);
@@ -104,12 +111,13 @@ body {
 
 article {
   display: grid;
-  place-content: center;
+  align-content: center;
   height: 100dvh;
 
   > div {
     padding-block: var(--pad-block);
-    width: var(--element-width);
+    width: 100%;
+    max-width: var(--element-width);
     margin-inline: auto;
     display: flex;
     flex-direction: column;

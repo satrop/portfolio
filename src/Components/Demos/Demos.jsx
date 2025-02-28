@@ -1,6 +1,7 @@
 import React from "react";
 import "./Demos.scss";
 import { motion } from "framer-motion";
+import CardStandard from "../CardStandard/CardStandard";
 
 const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -9,13 +10,14 @@ const Demos = () => {
     <motion.article
       id="demos"
       className="demos"
-      initial={{ opacity: 0, x: shouldReduceMotion ? 0 : -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 0.6 }}
+      initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeOut" }}
     >
       <div className="inner">
-        <h2>My Demos</h2>
+        <h2>Demos</h2>
+        <CardStandard type="demo" />
       </div>
     </motion.article>
   );

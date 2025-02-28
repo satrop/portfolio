@@ -3,6 +3,7 @@ import "./Projects.scss";
 import CardFeatured from "../CardFeatured/CardFeatured";
 import CardStandard from "../CardStandard/CardStandard";
 import { motion } from "framer-motion";
+import data from "../CardStandard/CardStandardData.json";
 
 const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -22,7 +23,7 @@ const letterAnimation = {
 
 const Projects = () => {
   const title1 = "A Few Sites I've Built";
-  const title2 = "Live Projects";
+  const title2 = data.standard.live.title;
 
   return (
     <article
@@ -76,7 +77,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeOut" }}
         >
-          <CardStandard />
+          <CardStandard type="live" />
         </motion.div>
       </div>
     </article>

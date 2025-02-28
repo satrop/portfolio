@@ -1,0 +1,141 @@
+{
+  "standard": {
+    "live": {
+      "title": "Live Projects",
+      "projects": [
+        {
+          "title": "Aperio Group",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.aperiogroup.com/"
+          }
+        },
+        {
+          "title": "Baker Boyer Bank",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.bakerboyer.com/"
+          }
+        },
+        {
+          "title": "Omnicell",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.omnicell.com/"
+          }
+        },
+        {
+          "title": "Westfield Insurance",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.westfieldinsurance.com/"
+          }
+        },
+        {
+          "title": "Boston Architectural College",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://the-bac.edu/"
+          }
+        },
+        {
+          "title": "LSUS",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.lsus.edu/"
+          }
+        },
+        {
+          "title": "JFI",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://jfi.org/"
+          }
+        },
+        {
+          "title": "KUMC",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.kumc.edu/"
+          }
+        },
+        {
+          "title": "EWEB",
+          "skills": ["SCSS", "HTML", "jQuery"],
+          "links": {
+            "linkOne": "https://www.eweb.org/"
+          }
+        }
+      ]
+    },
+    "demo": {
+      "title": "Demo Projects",
+      "projects": [
+        {
+          "title": "REST Countries API",
+          "skills": ["Tailwind", "Next.js", "TypeScript", "REST API", "Framer Motion"],
+          "links": {
+            "linkOne": "https://rest-countries-khaki-kappa.vercel.app/",
+            "linkTwo": "https://github.com/satrop/rest-countries"
+          }
+        },
+        {
+          "title": "Calculator App",
+          "skills": ["Tailwind", "Next.js"],
+          "links": {
+            "linkOne": "https://calculator-app-six-pi.vercel.app/",
+            "linkTwo": "https://github.com/satrop/calculator-app"
+          }
+        },
+        {
+          "title": "Easybank",
+          "skills": ["Tailwind", "Next.js", "TypeScript"],
+          "links": {
+            "linkOne": "https://easybank-two-livid.vercel.app//",
+            "linkTwo": "https://github.com/satrop/easybank"
+          }
+        },
+        {
+          "title": "Designo",
+          "skills": ["SCSS", "HTML", "React.js"],
+          "links": {
+            "linkOne": "https://satrop.github.io/Designo/",
+            "linkTwo": "https://github.com/satrop/Designo"
+          }
+        },
+        {
+          "title": "The Planets",
+          "skills": ["SCSS", "HTML", "React.js"],
+          "links": {
+            "linkOne": "https://satrop.github.io/Planets_Fact_Site/",
+            "linkTwo": "https://github.com/satrop/Planets_Fact_Site"
+          }
+        },
+        {
+          "title": "Arch Studio",
+          "skills": ["SCSS", "HTML", "React.js"],
+          "links": {
+            "linkOne": "https://satrop.github.io/arch-studio/#/",
+            "linkTwo": "https://github.com/satrop/arch-studio"
+          }
+        },
+        {
+          "title": "Space Tourism",
+          "skills": ["SCSS", "HTML", "React.js"],
+          "links": {
+            "linkOne": "https://satrop.github.io/Space_Tourism/",
+            "linkTwo": "https://github.com/satrop/Space_Tourism"
+          }
+        },
+        {
+          "title": "Audiophile",
+          "skills": ["SCSS", "HTML", "React.js"],
+          "links": {
+            "linkOne": "https://satrop.github.io/audiophile/#/",
+            "linkTwo": "https://github.com/satrop/audiophile"
+          }
+        }
+      ]
+    }
+  }
+}

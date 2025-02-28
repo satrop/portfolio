@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardFeatured.scss";
-import "../CardStyles/CardStyles.scss";
 import img1 from "../../assets/images/img-1.jpg";
 import img2 from "../../assets/images/img-2.jpg";
 import img3 from "../../assets/images/img-3.jpg";

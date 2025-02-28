@@ -54,6 +54,7 @@
 
     .media {
       img {
+        border-radius: var(--b-rad);
         transition: transform var(--anim);
       }
 
@@ -70,6 +71,7 @@
       gap: 0.6rem;
       padding: 4rem 2rem;
       background-color: var(--card);
+      border-radius: var(--b-rad);
 
       a {
         h3 {

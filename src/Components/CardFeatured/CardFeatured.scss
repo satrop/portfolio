@@ -18,41 +18,9 @@
       }
     }
 
-    a {
-      text-decoration: none;
-
-      h3 {
-        color: var(--green-200);
-      }
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      opacity: 0.8;
-
-      li {
-        font-size: 0.8rem;
-
-        &::before {
-          content: "/";
-          margin-right: 0.5rem;
-        }
-
-        &:first-child {
-          &::before {
-            content: "";
-            margin-right: 0;
-          }
-        }
-      }
-    }
-
     .media,
     .content {
       flex: 1;
-      border-radius: var(--b-rad);
       overflow: hidden;
     }
 

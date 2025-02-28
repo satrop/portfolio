@@ -1,36 +1,61 @@
 import React from "react";
 import "./CardStandard.scss";
+import "../CardStyles/CardStyles.scss";
 
 const data = [
   {
     id: 1,
-    title: "Standard Project One",
-    link: "https://example.com/standard-project-one",
-    items: ["SCSS", "HTML", "jQuery", "Twig"],
+    title: "Aperio Group",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.aperiogroup.com/",
   },
   {
     id: 2,
-    title: "Standard Project Two",
-    link: "https://example.com/standard-project-two",
-    items: ["SCSS", "HTML", "jQuery", "Twig"],
+    title: "Baker Boyer Bank",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.bakerboyer.com/",
   },
   {
     id: 3,
-    title: "Standard Project Three",
-    link: "https://example.com/standard-project-three",
-    items: ["Detail X", "Detail Y", "Detail Z"],
+    title: "Omnicell",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.omnicell.com/",
   },
   {
     id: 4,
-    title: "Standard Project One",
-    link: "https://example.com/standard-project-one",
-    items: ["Detail 1", "Detail 2", "Detail 3"],
+    title: "Westfield Insurance",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.westfieldinsurance.com/",
   },
   {
     id: 5,
-    title: "Standard Project Two",
-    link: "https://example.com/standard-project-two",
-    items: ["Detail A", "Detail B", "Detail C"],
+    title: "Boston Architectural College",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://the-bac.edu/",
+  },
+  {
+    id: 6,
+    title: "LSUS",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.lsus.edu/",
+  },
+  {
+    id: 7,
+    title: "JFI",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://jfi.org/",
+  },
+  {
+    id: 8,
+    title: "KUMC",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.kumc.edu/",
+  },
+  {
+    id: 9,
+    title: "EWEB",
+    items: ["SCSS", "HTML", "jQuery"],
+    link: "https://www.eweb.org/",
   },
 ];
 
@@ -38,23 +63,21 @@ const CardStandard = () => {
   return (
     <div className="card-standard-container">
       {data.map((card) => (
-        <div
+        <a
           key={card.id}
-          className="card-standard"
+          className="card card-standard"
+          href={card.link}
+          target="_blank"
+          aria-label={`View ${card.title} in a new tab`}
+          rel="noopener noreferrer"
         >
-          <a
-            href={card.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>{card.title}</h2>
-          </a>
+          <h4>{card.title}</h4>
           <ul>
             {card.items.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>
-        </div>
+        </a>
       ))}
     </div>
   );

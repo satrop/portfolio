@@ -70,7 +70,7 @@ const Projects = () => {
           ))}
         </h2>
         <motion.div
-          className="featured-cards-container"
+          className="standard-cards-container"
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

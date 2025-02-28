@@ -3,34 +3,23 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(calc(300px - 2rem), 1fr));
-}
 
-.card-standard {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
+  .card-standard {
+    background-color: var(--card);
+    overflow: hidden;
+    padding: 20px;
+    transition: all var(--anim);
+    text-decoration: none;
+    color: white;
+    outline: 2px solid transparent;
 
-.card-standard:hover {
-  transform: translateY(-5px);
-}
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.05);
+    }
 
-.card-standard a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-standard h2 {
-  margin: 0 0 10px;
-}
-
-.card-standard ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.card-standard li {
-  margin-bottom: 5px;
+    &:focus-visible {
+      outline: 2px solid var(--green-200);
+    }
+  }
 }

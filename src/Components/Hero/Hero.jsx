@@ -39,10 +39,11 @@ const Hero = () => {
   const name = "I'm Steve Portas";
   const links = [
     {
-      href: "../../assets/Steve_Portas_Resume.pdf",
+      href: require("../../assets/Steve Portas - Resume.pdf.zip"),
       ariaLabel: "Download a PDF of my resume.",
       icon: <AiFillFilePdf aria-hidden="true" />,
       text: "Download PDF",
+      download: true,
     },
     {
       href: "https://github.com/satrop",
@@ -126,6 +127,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 aria-label={link.ariaLabel}
                 className="tooltip tooltip--bottom"
+                download={link.download}
               >
                 {link.icon}
                 <span aria-hidden="true">{link.text}</span>

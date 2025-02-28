@@ -39,7 +39,7 @@ const Hero = () => {
   const name = "I'm Steve Portas";
   const links = [
     {
-      href: "/path/to/your-document.pdf",
+      href: "../../assets/Steve_Portas_Resume.pdf",
       ariaLabel: "Download a PDF of my resume.",
       icon: <AiFillFilePdf aria-hidden="true" />,
       text: "Download PDF",

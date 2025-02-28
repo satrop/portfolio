@@ -84,7 +84,7 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeOut" }}
           >
-            Nice to meet you!
+            Nice to meet you.
           </motion.div>
           <h1>
             {name.split("").map((letter, index) => (

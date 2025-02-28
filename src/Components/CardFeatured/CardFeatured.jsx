@@ -7,24 +7,24 @@ import img3 from "../../assets/images/img-3.jpg";
 const data = [
   {
     id: 1,
-    title: "Project One",
+    title: "ADML",
     imageUrl: img1,
-    link: "https://example.com/project-one",
-    items: ["Feature 1", "Feature 2", "Feature 3"],
+    link: "https://myadlm.org/",
+    items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "Wilson Center",
     imageUrl: img2,
-    link: "https://example.com/project-two",
-    items: ["Feature A", "Feature B", "Feature C"],
+    link: "https://www.wilsoncenter.org/",
+    items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
     id: 3,
-    title: "Project Three",
+    title: "Whitman College",
     imageUrl: img3,
-    link: "https://example.com/project-three",
-    items: ["Feature X", "Feature Y", "Feature Z"],
+    link: "https://www.whitman.edu/",
+    items: ["SCSS", "HTML", "jQuery"],
   },
 ];
 

@@ -6,13 +6,13 @@ const data = [
     id: 1,
     title: "Standard Project One",
     link: "https://example.com/standard-project-one",
-    items: ["Detail 1", "Detail 2", "Detail 3"],
+    items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
     id: 2,
     title: "Standard Project Two",
     link: "https://example.com/standard-project-two",
-    items: ["Detail A", "Detail B", "Detail C"],
+    items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
     id: 3,

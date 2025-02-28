@@ -53,12 +53,15 @@
     }
 
     .media {
+      border-radius: var(--b-rad);
+      overflow: hidden;
+
       img {
-        border-radius: var(--b-rad);
         transition: transform var(--anim);
       }
 
-      &:hover {
+      a:hover,
+      a:focus {
         img {
           transform: scale(1.05);
         }
@@ -74,8 +77,43 @@
       border-radius: var(--b-rad);
 
       a {
+        position: relative;
+
         h3 {
+          display: inline;
           color: var(--green-200);
+          transition: color var(--anim);
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.2rem;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: var(--green-200);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--anim);
+            z-index: -1;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          outline: none;
+
+          h3 {
+            color: white;
+
+            &::after {
+              background-color: white;
+              transform: scaleX(1);
+            }
+          }
         }
       }
     }

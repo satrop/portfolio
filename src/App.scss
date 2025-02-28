@@ -7,6 +7,7 @@
   --light-header: #4ce19e;
   --light-primary: #041a10;
   --light-green: #4ce19e;
+  --light-card: #edf3f0;
 
   // Dark Theme Colors
   --dark-bg: #041a10;
@@ -14,6 +15,7 @@
   --dark-header: #ffffff;
   --dark-primary: #4ce19e;
   --dark-green: #0c4f31;
+  --dark-card: #042215;
 
   // Green Shades
   --green-100: #041a10;
@@ -129,6 +131,7 @@ body {
   --primary-color: var(--light-primary);
   --header-color: var(--light-header);
   --green: var(--light-green);
+  --card: var(--light-card);
 }
 
 [data-theme="dark"] {
@@ -137,6 +140,7 @@ body {
   --primary-color: var(--dark-primary);
   --header-color: var(--dark-header);
   --green: var(--dark-green);
+  --card: var(--dark-card);
 }
 
 body {
@@ -148,7 +152,7 @@ body {
 article {
   display: grid;
   align-content: center;
-  height: 100dvh;
+  min-height: 100dvh;
 
   > div {
     padding-block: var(--pad-block);

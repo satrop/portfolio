@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.62d6ee7a.css",
-    "main.js": "/portfolio/static/js/main.a9c89504.js",
+    "main.css": "/portfolio/static/css/main.84d2ca74.css",
+    "main.js": "/portfolio/static/js/main.548b8cf1.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/Steve Portas - Resume.pdf.zip": "/portfolio/static/media/Steve Portas - Resume.pdf.3fdd904d1c87764fde50.zip",
+    "static/media/Steve Portas - Resume.pdf.zip": "/portfolio/static/media/Steve Portas - Resume.pdf.f41426f9ec8d581ee309.zip",
     "static/media/img-3.jpg": "/portfolio/static/media/img-3.05f7a2addba377618f8b.jpg",
     "static/media/img-2.jpg": "/portfolio/static/media/img-2.921c8447a1b7d4eaa8b1.jpg",
     "static/media/img-1.jpg": "/portfolio/static/media/img-1.7f3e6c9be1ea4b3b164b.jpg",
     "static/media/Me.jpg": "/portfolio/static/media/Me.0a292c58999b4e899674.jpg",
     "index.html": "/portfolio/index.html",
-    "main.62d6ee7a.css.map": "/portfolio/static/css/main.62d6ee7a.css.map",
-    "main.a9c89504.js.map": "/portfolio/static/js/main.a9c89504.js.map",
+    "main.84d2ca74.css.map": "/portfolio/static/css/main.84d2ca74.css.map",
+    "main.548b8cf1.js.map": "/portfolio/static/js/main.548b8cf1.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62d6ee7a.css",
-    "static/js/main.a9c89504.js"
+    "static/css/main.84d2ca74.css",
+    "static/js/main.548b8cf1.js"
   ]
 }

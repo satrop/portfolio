@@ -72,7 +72,7 @@
       "title": "Demo Projects",
       "projects": [
         {
-          "title": "",
+          "title": "Todo app",
           "skills": ["Next.js", "TypeScript"],
           "links": {
             "linkOne": "https://demo-todo-nu.vercel.app/",

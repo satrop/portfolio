@@ -72,6 +72,22 @@
       "title": "Demo Projects",
       "projects": [
         {
+          "title": "",
+          "skills": ["Next.js", "TypeScript"],
+          "links": {
+            "linkOne": "https://demo-todo-nu.vercel.app/",
+            "linkTwo": "https://github.com/satrop/demo-todo?tab=readme-ov-file"
+          }
+        },
+        {
+          "title": "Photosnap Demo Site",
+          "skills": ["Next.js", "TypeScript", "Jest"],
+          "links": {
+            "linkOne": "https://demo-photosnap.vercel.app/",
+            "linkTwo": "https://github.com/satrop/demo-photosnap?tab=readme-ov-file"
+          }
+        },
+        {
           "title": "REST Countries API",
           "skills": ["Tailwind", "Next.js", "TypeScript", "REST API", "Framer Motion"],
           "links": {
@@ -85,14 +101,6 @@
           "links": {
             "linkOne": "https://calculator-app-six-pi.vercel.app/",
             "linkTwo": "https://github.com/satrop/calculator-app"
-          }
-        },
-        {
-          "title": "Easybank",
-          "skills": ["Tailwind", "Next.js", "TypeScript"],
-          "links": {
-            "linkOne": "https://easybank-two-livid.vercel.app//",
-            "linkTwo": "https://github.com/satrop/easybank"
           }
         },
         {

@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.84d2ca74.css",
-    "main.js": "/portfolio/static/js/main.0f0ea976.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/Steve Portas - Resume.pdf.zip": "/portfolio/static/media/Steve Portas - Resume.pdf.f41426f9ec8d581ee309.zip",
-    "static/media/img-3.jpg": "/portfolio/static/media/img-3.05f7a2addba377618f8b.jpg",
-    "static/media/img-2.jpg": "/portfolio/static/media/img-2.921c8447a1b7d4eaa8b1.jpg",
-    "static/media/img-1.jpg": "/portfolio/static/media/img-1.7f3e6c9be1ea4b3b164b.jpg",
-    "static/media/Me.jpg": "/portfolio/static/media/Me.0a292c58999b4e899674.jpg",
+    "main.css": "/portfolio/static/css/main.0e86a1d6.css",
+    "main.js": "/portfolio/static/js/main.153fdbd8.js",
+    "static/js/887.7c1e65aa.chunk.js": "/portfolio/static/js/887.7c1e65aa.chunk.js",
+    "static/media/me_new.jpg": "/portfolio/static/media/me_new.c1be3b4ebf14c8cc57b0.jpg",
+    "static/media/img-3.jpg": "/portfolio/static/media/img-3.921c8447a1b7d4eaa8b1.jpg",
+    "static/media/img-1.jpg": "/portfolio/static/media/img-1.97a880f52fbd511263a1.jpg",
+    "static/media/img-2.jpg": "/portfolio/static/media/img-2.7f3e6c9be1ea4b3b164b.jpg",
+    "static/media/Steve-Portas-Resume.pdf.zip": "/portfolio/static/media/Steve-Portas-Resume.pdf.edceac66911ffc41e4d4.zip",
     "index.html": "/portfolio/index.html",
-    "main.84d2ca74.css.map": "/portfolio/static/css/main.84d2ca74.css.map",
-    "main.0f0ea976.js.map": "/portfolio/static/js/main.0f0ea976.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.0e86a1d6.css.map": "/portfolio/static/css/main.0e86a1d6.css.map",
+    "main.153fdbd8.js.map": "/portfolio/static/js/main.153fdbd8.js.map",
+    "887.7c1e65aa.chunk.js.map": "/portfolio/static/js/887.7c1e65aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84d2ca74.css",
-    "static/js/main.0f0ea976.js"
+    "static/css/main.0e86a1d6.css",
+    "static/js/main.153fdbd8.js"
   ]
 }

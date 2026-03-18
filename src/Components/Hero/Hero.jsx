@@ -39,7 +39,7 @@ const Hero = () => {
   const name = "I'm Steve Portas";
   const links = [
     {
-      href: require("../../assets/Steve Portas - Resume.pdf.zip"),
+      href: require("../../assets/Steve-Portas-Resume.pdf.zip"),
       ariaLabel: "Download a PDF of my resume.",
       icon: <AiFillFilePdf aria-hidden="true" />,
       text: "Download PDF",
@@ -109,7 +109,25 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 1.5 }}
         >
-          Front-End Web Developer with 10+ years of experience building responsive, accessible, and scalable web applications. Skilled in Next.js, React, SCSS, JavaScript, Tailwind CSS, and ADA compliance (WCAG). Passionate about crafting high-performance, user-friendly web experiences. Strong collaborator with cross-functional teams to enhance development workflows, optimize performance, and uphold best coding practices.
+          Senior Front-End Developer specialising in design systems, component architecture, and accessibility-first development. With 20+ years of experience I've moved from writing code to designing the foundations that teams build on — scalable, well-documented systems that outlast any single contributor.
+        </motion.p>
+        
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 1.5 }}
+        >
+          Accessibility isn't a checklist item for me. I have a visual disability, and that shapes how I approach every component I build. WCAG compliance gets baked in from the start, not bolted on at the end.
+        </motion.p>
+        
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={shouldReduceMotion ? {} : { duration: 1, ease: "easeInOut", delay: 1.5 }}
+        >
+          Currently looking for in-house roles at mission-driven organisations where the work has real, lasting impact.
         </motion.p>
         <ul className="hero-links">
           {links.map((link, index) => (

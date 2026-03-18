@@ -4,11 +4,11 @@
       "title": "Live Projects",
       "projects": [
         {
-          "title": "Aperio Group",
+          "title": "Whitman College",
           "skills": ["SCSS", "HTML", "jQuery"],
           "links": {
-            "linkOne": "https://www.aperiogroup.com/"
-          }
+            "linkOne": "https://www.whitman.edu/"
+          } 
         },
         {
           "title": "Baker Boyer Bank",
@@ -85,14 +85,6 @@
           "links": {
             "linkOne": "https://demo-photosnap.vercel.app/",
             "linkTwo": "https://github.com/satrop/demo-photosnap?tab=readme-ov-file"
-          }
-        },
-        {
-          "title": "REST Countries API",
-          "skills": ["Tailwind", "Next.js", "TypeScript", "REST API", "Framer Motion"],
-          "links": {
-            "linkOne": "https://rest-countries-khaki-kappa.vercel.app/",
-            "linkTwo": "https://github.com/satrop/rest-countries"
           }
         },
         {

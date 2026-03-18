@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import myImage from "../../assets/images/Me.jpg";
+import myImage from "../../assets/images/me_new.jpg";
 
 const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -60,7 +60,7 @@ const About = () => {
 
           <p>When I moved to the U.S., I felt right at home. California was a bit too sunny, but the Pacific Northwest? Just right. I met my wife, Jess, and we've been giggling together for 15 years. Our kiddos, pups, and kitty just add to the fun.</p>
 
-          <p>I've done a lot of interesting work, but now it's time to find a role that truly fits all my skills and passions.</p>
+          <p>After 20+ years across digital agencies I'm ready for something with more permanence — in-house work at a mission-driven organisation where I can build things that matter and stick around long enough to see them grow.</p>
         </motion.div>
         <motion.div
           className="media"

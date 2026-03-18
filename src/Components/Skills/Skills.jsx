@@ -36,11 +36,12 @@ const listAnimation = {
 const Skills = () => {
   const skills = "Skills";
   const lists = [
-    ["Frameworks & Libraries", "React", "Next.js", "Vue.js", "jQuery", "Tailwind CSS", "Bootstrap"],
-    ["Tools & Platforms", "Git", "npm", "Yarn", "Webpack", "Gulp", "CMS"],
-    ["Design & Prototyping", "Sketch", "Photoshop", "Figma", "Illustrator"],
-    ["Programming & Markup", "JavaScript (ES6+)", "TypeScript", "HTML5", "SCSS", "PHP", "C"],
-    ["Accessibility & Performance", "WCAG", "ADA Compliance", "Lighthouse Audits"],
+    ["Design Systems & Architecture", "Design Systems", "Design Tokens", "CSS Architecture", "Component Libraries"],
+    ["Frameworks & Libraries", "React", "Astro", "Tailwind CSS", "Bootstrap"],
+    ["Programming & Markup", "JavaScript (ES6+)", "TypeScript", "HTML5", "SCSS"],
+    ["Accessibility & Performance", "WCAG 2.1", "ADA Compliance", "Accessibility-first Development", "Lighthouse Audits"],
+    ["Tools & Platforms", "Git", "pnpm", "Yarn", "Webpack", "Gulp"],
+    ["Design & Prototyping", "Figma"],
   ];
 
   return (

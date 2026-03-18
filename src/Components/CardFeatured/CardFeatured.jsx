@@ -7,25 +7,25 @@ import img3 from "../../assets/images/img-3.jpg";
 const data = [
   {
     id: 1,
-    title: "ADML",
+    title: "ACOFP",
     imageUrl: img1,
+    link: "https://acofp.org/family-physicians-do-more",
+    items: ["SCSS", "Astro", "JS"],
+  },
+  {
+    id: 2,
+    title: "ADML",
+    imageUrl: img2,
     link: "https://myadlm.org/",
     items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Wilson Center",
-    imageUrl: img2,
+    imageUrl: img3,
     link: "https://www.wilsoncenter.org/",
     items: ["SCSS", "HTML", "jQuery", "Twig"],
-  },
-  {
-    id: 3,
-    title: "Whitman College",
-    imageUrl: img3,
-    link: "https://www.whitman.edu/",
-    items: ["SCSS", "HTML", "jQuery"],
-  },
+  }
 ];
 
 const CardFeatured = () => {

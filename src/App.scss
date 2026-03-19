@@ -114,6 +114,7 @@ h6 {
 
 ul {
   padding: 0;
+
   li {
     list-style: none;
   }
@@ -159,7 +160,7 @@ article {
   align-content: center;
   min-height: 100dvh;
 
-  > div {
+  >div {
     padding-block: var(--pad-block);
     width: 100%;
     max-width: var(--element-width);
@@ -224,6 +225,13 @@ p {
   svg {
     font-size: 1rem;
     transition: fill var(--anim);
+
+  }
+
+  &.hero-link--edx {
+    svg {
+      font-size: 2rem;
+    }
   }
 
   span {

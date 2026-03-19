@@ -23,6 +23,7 @@ const App = () => {
     <div className="App">
       <button
         className="theme-toggle"
+        aria-label="Toggle theme"
         onClick={toggleTheme}
       >
         <svg
@@ -33,11 +34,13 @@ const App = () => {
         </svg>
       </button>
       <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Demos />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Demos />
+      </main>
     </div>
   );
 };

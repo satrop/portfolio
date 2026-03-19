@@ -15,7 +15,7 @@ const CardStandard = ({ type }) => {
             key={`${card.title}-${index}`}
             className="card-standard"
           >
-            <h4>{card.title}</h4>
+            <h3>{card.title}</h3>
             <ul>
               {card.skills.map((skill, idx) => (
                 <li key={idx}>{skill}</li>
@@ -59,7 +59,7 @@ const CardStandard = ({ type }) => {
               aria-label={`View ${card.title} in a new tab`}
               rel="noopener noreferrer"
             >
-              <h4>{card.title}</h4>
+              <h3>{card.title}</h3>
               <ul>
                 {card.skills.map((skill, idx) => (
                   <li key={idx}>{skill}</li>

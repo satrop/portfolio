@@ -3,6 +3,7 @@ import "./Hero.scss";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import { AiFillFilePdf } from "react-icons/ai";
+import { DiW3C } from "react-icons/di";
 import { motion } from "framer-motion";
 
 const shouldReduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -68,6 +69,13 @@ const Hero = () => {
       ariaLabel: "Go to my CodePen account.",
       icon: <FaCodepen aria-hidden="true" />,
       text: "CodePen",
+    },
+    {
+      href: "https://courses.edx.org/certificates/64dbfa23f4ea41718ede200200bd15da",
+      ariaLabel: "View my edX certificate.",
+      icon: <DiW3C aria-hidden="true" />,
+      text: "edX Certificate",
+      className: "hero-link--edx",
     },
   ];
 
@@ -144,7 +152,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.ariaLabel}
-                className="tooltip tooltip--bottom"
+                className={`tooltip tooltip--bottom ${link.className || ""}`.trim()}
                 download={link.download}
               >
                 {link.icon}

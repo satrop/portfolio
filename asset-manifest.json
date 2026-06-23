@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.98dfb311.css",
-    "main.js": "/portfolio/static/js/main.da19b023.js",
+    "main.js": "/portfolio/static/js/main.59a488f6.js",
     "static/js/887.7c1e65aa.chunk.js": "/portfolio/static/js/887.7c1e65aa.chunk.js",
+    "static/media/img-1.jpg": "/portfolio/static/media/img-1.f0af32c81e30bb7e9661.jpg",
     "static/media/me_new.jpg": "/portfolio/static/media/me_new.c1be3b4ebf14c8cc57b0.jpg",
-    "static/media/img-3.jpg": "/portfolio/static/media/img-3.921c8447a1b7d4eaa8b1.jpg",
-    "static/media/img-1.jpg": "/portfolio/static/media/img-1.97a880f52fbd511263a1.jpg",
-    "static/media/img-2.jpg": "/portfolio/static/media/img-2.7f3e6c9be1ea4b3b164b.jpg",
+    "static/media/img-4.jpg": "/portfolio/static/media/img-4.921c8447a1b7d4eaa8b1.jpg",
+    "static/media/img-2.jpg": "/portfolio/static/media/img-2.97a880f52fbd511263a1.jpg",
+    "static/media/img-3.jpg": "/portfolio/static/media/img-3.7f3e6c9be1ea4b3b164b.jpg",
     "static/media/Steve-Portas-Resume.pdf.zip": "/portfolio/static/media/Steve-Portas-Resume.pdf.edceac66911ffc41e4d4.zip",
     "index.html": "/portfolio/index.html",
     "main.98dfb311.css.map": "/portfolio/static/css/main.98dfb311.css.map",
-    "main.da19b023.js.map": "/portfolio/static/js/main.da19b023.js.map",
+    "main.59a488f6.js.map": "/portfolio/static/js/main.59a488f6.js.map",
     "887.7c1e65aa.chunk.js.map": "/portfolio/static/js/887.7c1e65aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98dfb311.css",
-    "static/js/main.da19b023.js"
+    "static/js/main.59a488f6.js"
   ]
 }

@@ -3,26 +3,34 @@ import "./CardFeatured.scss";
 import img1 from "../../assets/images/img-1.jpg";
 import img2 from "../../assets/images/img-2.jpg";
 import img3 from "../../assets/images/img-3.jpg";
+import img4 from "../../assets/images/img-4.jpg";
 
 const data = [
   {
     id: 1,
-    title: "ACOFP",
+    title: "APHL",
     imageUrl: img1,
-    link: "https://acofp.org/family-physicians-do-more",
+    link: "https://aphl.org/",
     items: ["SCSS", "Astro", "JS"],
   },
   {
     id: 2,
-    title: "ADML",
+    title: "ACOFP",
     imageUrl: img2,
+    link: "https://acofp.org/family-physicians-do-more",
+    items: ["SCSS", "Astro", "JS"],
+  },
+  {
+    id: 3,
+    title: "ADML",
+    imageUrl: img3,
     link: "https://myadlm.org/",
     items: ["SCSS", "HTML", "jQuery", "Twig"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Wilson Center",
-    imageUrl: img3,
+    imageUrl: img4,
     link: "https://www.wilsoncenter.org/",
     items: ["SCSS", "HTML", "jQuery", "Twig"],
   }
